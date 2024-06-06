@@ -9,8 +9,13 @@ function valida() {
     if(mailHardCodeado == obtenerMailForm && 
         passwordHardCodeado == obtenerPswForm
      ){
-            alert("Las credenciales son correctas")
+            alert("Las credenciales son correctas");
+            redireccionar();
       } else {
            alert("Las credenciales son incorrectas")
         }
+}
+
+function redireccionar() {
+window.location.replace("/pages/nasa.html");
 }
